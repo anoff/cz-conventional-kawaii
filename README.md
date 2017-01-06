@@ -8,11 +8,21 @@ Together with **conventional-changelog-kawaii** as your adapter for `conventiona
 
 ## Usage
 
-_Prerequisite:  [commitizen](https://github.com/commitizen/cz-cli)_
+You need to have [commitizen](https://github.com/commitizen/cz-cli) installed.
+
+To install it for your project:
 
 ```sh
 npm i --save-dev cz-conventional-kawaii
 commitizen init cz-conventional-kawaii
+```
+
+If you ❤️ it so much you want to use it everywhere:
+
+```sh
+npm i -g cz-conventional-kawaii
+# set as default adapter for your projects
+echo '{ "path": "cz-conventional-kawaii" }' > ~/.czrc
 ```
 
 ## Customization
@@ -54,10 +64,10 @@ You can build your own *kawaii* commitizen adapter using **cz-conventional-kawai
 
 ```javascript
 // myadapter.js
+const convKawaii = require('cz-conventional-kawaii');
 const myConfig = {
 	types: {} // see lib/types.json for layout
 };
-const convKawaii = require('cz-conventional-kawaii');
 module.exports = convKawaii.module(myConfig);
 ```
 

@@ -78,6 +78,6 @@ module.exports = {
 					.then(format)
 					.then(commit);
 			}
-		}
+		};
 	}
 };
