@@ -18,7 +18,7 @@ function createQuestions(res) {
 			}
 		};
 	});
-	return [
+	let q = [
 		{
 			type: 'list',
 			name: 'type',
@@ -35,8 +35,11 @@ function createQuestions(res) {
 			type: 'input',
 			name: 'subject',
 			message: 'Short description'
-		},
-		{
+		}
+	];
+	// append extended questions for 'normal' mode
+	if (!config.quick) {
+		q = q.concat([{
 			type: 'input',
 			name: 'issues',
 			message: 'Affected issues'
@@ -45,8 +48,9 @@ function createQuestions(res) {
 			type: 'input',
 			name: 'body',
 			message: 'Longer description'
-		}
-	];
+		}]);
+	}
+	return q;
 }
 
 function format(answers) {

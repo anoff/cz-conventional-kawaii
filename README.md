@@ -27,6 +27,8 @@ echo '{ "path": "cz-conventional-kawaii" }' > ~/.czrc
 
 ## Customization
 
+You can customize **types**, **scopes** and the inquirer **questions** per project or globally.
+
 ### per project
 
 You can customize on a per project basis by adding a **cz-conventional-kawaii** entry to your `package.json`.
@@ -34,6 +36,8 @@ You can customize on a per project basis by adding a **cz-conventional-kawaii** 
 Specifying a `types` object will replace the default types. The object key will be the type used in the commit message together with the `emoji` entry.
 
 You can also specify a fixed set of **scope** entries for your project by adding the respective field in the `package.json` config section.
+
+Setting `quick` to a truthy value will skip the _long description_ and _closed issues_ section of the dialogue.
 
 ```json
 ..
@@ -53,7 +57,8 @@ You can also specify a fixed set of **scope** entries for your project by adding
 			"logout",
 			"registration",
 			"update"
-		]
+		],
+		"quick": true
 	}
 }
 ```
@@ -70,6 +75,9 @@ const myConfig = {
 };
 module.exports = convKawaii.module(myConfig);
 ```
+## Future ideas
+
+* [ ] Might implement global configuration options via `{home}/.czrc` at some point.
 
 ## License
 
