@@ -6,6 +6,12 @@ You like emojis and think conventional changelog formatting is a good idea? Well
 
 Together with **conventional-changelog-kawaii** as your adapter for `conventional-changelog` it gives you emojis on your git history and clean changelogs.
 
+![default types & emojis](./types.png)
+
+The default types and emojis from above give you awesome commit messages like these:
+
+![example messages](./commits.png)
+
 ## Usage
 
 You need to have [commitizen](https://github.com/commitizen/cz-cli) installed.
