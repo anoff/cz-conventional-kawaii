@@ -1,0 +1,30 @@
+{
+  "feat": {
+    "description": "feature\t🌟\tNew feature",
+    "emoji": ":star2:"
+  },
+  "fix": {
+    "description": "fix\t\t🐜\tBug fix",
+    "emoji": ":ant:"
+  },
+  "docs": {
+    "description": "docs\t\t📄\tUpdated documentation",
+    "emoji": ":page_facing_up:"
+  },
+  "build": {
+    "description": "build\t\t👷\tChanges to the build procedure",
+    "emoji": ":construction_worker:"
+  },
+  "refactor": {
+    "description": "refactor\t✂️\tRefactoring code",
+    "emoji": ":scissors:"
+  },
+  "perf": {
+    "description": "perf\t\t🚀\tPerformance improvement",
+    "emoji": ":rocket:"
+  },
+  "chore": {
+    "description": "chore\t\t💤\tNot affecting code or tests",
+    "emoji": ":zzz:"
+  }
+}

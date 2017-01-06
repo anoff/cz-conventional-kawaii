@@ -1,0 +1,31 @@
+{
+  "name": "cz-conventional-kawaii",
+  "version": "0.1.0",
+  "description": "Commitizen adapter formatting commit messages using emojis.",
+  "author": "Andreas Offenhäuser <offenhaeuser@gmail.com>",
+  "license": "MIT",
+  "repository": "anoff/cz-conventional-kawaii",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js",
+    "lib/types.json"
+  ],
+  "keywords": [
+    "commitizen",
+		"adapter",
+    "conventional-changelog",
+    "emojis",
+		"kawaii"
+  ],
+  "dependencies": {
+    "cli-truncate": "^0.2.1",
+    "read-pkg-up": "^2.0.0",
+    "wrap-ansi": "^2.1.0"
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
+  }
+}
