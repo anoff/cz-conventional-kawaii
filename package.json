@@ -1,6 +1,6 @@
 {
   "name": "cz-conventional-kawaii",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Allow emojified commit messages and clean changelogs 🐼📄",
   "author": "Andreas Offenhäuser <offenhaeuser@gmail.com>",
   "license": "MIT",
@@ -9,15 +9,15 @@
   "engines": {
     "node": ">=4"
   },
-	"scripts": {
-		"test": "xo"
-	},
+  "scripts": {
+    "test": "xo"
+  },
   "keywords": [
     "commitizen",
-		"adapter",
+    "adapter",
     "conventional-changelog",
     "emojis",
-		"kawaii"
+    "kawaii"
   ],
   "dependencies": {
     "cli-truncate": "^0.2.1",
