@@ -2,9 +2,9 @@
 
 > Allow emojified commit messages and clean changelogs 🐼📄
 
-You like emojis and think conventional changelog formatting is a good idea? Well **cz-conventional-kawaii** gives you both.
+You like emojis and think conventional changelog formatting is a good idea? Well **cz-conventional-kawaii** gives you both. It is basically a blend between `cz-conventional-changelog-atom`, `cz-conventional-changelog` and `cz-emoji`.
 
-Together with **conventional-changelog-kawaii** as your adapter for `conventional-changelog` it gives you emojis on your git history and clean changelogs.
+Together with the **atom** preset for `conventional-changelog` it gives you emojis on your git history and clean changelogs.
 
 ![default types & emojis](./types.png)
 
@@ -12,23 +12,34 @@ The default types and emojis from above give you awesome commit messages like th
 
 ![example messages](./commits.png)
 
-## Usage
+Running `conventional-changelog -p atom` will format your changelog
+
+<img src="changelog.png" width="400"/>
+
+## Installation
 
 You need to have [commitizen](https://github.com/commitizen/cz-cli) installed.
 
-To install it for your project:
-
 ```sh
-npm i --save-dev cz-conventional-kawaii
-commitizen init cz-conventional-kawaii
+# install per project
+$ npm i --save-dev cz-conventional-kawaii
+$ commitizen init cz-conventional-kawaii
+
+# global install for all projects
+$ npm i -g cz-conventional-kawaii
+$ echo '{ "path": "cz-conventional-kawaii" }' > ~/.czrc
 ```
 
-If you ❤️ it so much you want to use it everywhere:
+## Usage
+
+After you changed some code add it and commit using
 
 ```sh
-npm i -g cz-conventional-kawaii
-# set as default adapter for your projects
-echo '{ "path": "cz-conventional-kawaii" }' > ~/.czrc
+$ git add . # add all changes
+$ git cz # or git-cz
+
+# When you decide to release update your CHANGELOG
+$ conventional-changelog -p atom -i CHANGELOG.md
 ```
 
 ## Customization
