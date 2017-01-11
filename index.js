@@ -3,7 +3,7 @@ const wrap = require('wrap-ansi');
 let types = require('./lib/types');
 
 function createQuestions(res) {
-	const pkg = res.pkg.config || {};
+	const pkg = ((res || {}).pkg || {}).config || {};
 	const config = pkg['cz-conventional-kawaii'] || {};
 	// use types from config otherwise default
 	types = config.types ? config.types : types;
