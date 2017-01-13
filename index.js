@@ -63,7 +63,10 @@ function format(answers) {
 	// wrap body at 100
 	const body = wrap(answers.body, 100);
 
-	return (head + '\n\n' + body);
+	// build issue
+	const issues = answers.issues ? '\n\n' + answers.issues : '';
+
+	return (head + '\n\n' + body + issues);
 }
 
 module.exports = {
