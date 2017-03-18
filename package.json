@@ -24,6 +24,6 @@
     "wrap-ansi": "^2.1.0"
   },
   "devDependencies": {
-    "xo": "^0.17.1"
+    "xo": "^0.18.0"
   }
 }
