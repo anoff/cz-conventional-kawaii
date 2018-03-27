@@ -104,9 +104,12 @@ const myConfig = {
 };
 module.exports = convKawaii.module(myConfig);
 ```
-## Future ideas
+## Changelog
 
-* [x] Might implement global configuration options via `{home}/.czrc` at some point.
+`v1.0.0`
+
+- made quick mode even quicker
+- added support of system wide `.czrc` configuration
 
 ## License
 
