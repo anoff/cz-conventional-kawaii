@@ -62,7 +62,7 @@ function format (answers) {
   const head = (answers.type.emoji + ' ' + answers.type.string + scope + answers.subject.trim()).slice(0, 100)
 
   // wrap body at 100
-  const body = wrap(answers.body, 100)
+  const body = answers.body ? wrap(answers.body, 100) : ''
 
   // build issue
   const issues = answers.issues ? '\n\n' + answers.issues : ''
