@@ -10,7 +10,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo"
+    "test": "standard"
   },
   "keywords": [
     "commitizen",
@@ -24,6 +24,6 @@
     "wrap-ansi": "^3.0.0"
   },
   "devDependencies": {
-    "xo": "^0.19.0"
+    "standard": "^11.0.1"
   }
 }

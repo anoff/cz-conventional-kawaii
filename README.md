@@ -37,9 +37,6 @@ After you changed some code add it and commit using
 ```sh
 $ git add . # add all changes
 $ git cz # or git-cz
-
-# When you decide to release update your CHANGELOG
-$ conventional-changelog -p atom -i CHANGELOG.md
 ```
 
 ## Customization
@@ -48,13 +45,13 @@ You can customize **types**, **scopes** and the inquirer **questions** per proje
 
 ### per project
 
-You can customize on a per project basis by adding a **cz-conventional-kawaii** entry to your `package.json`.
+To customize on a per project basis simply add a **config.cz-conventional-kawaii** entry to your `package.json`.
 
 Specifying a `types` object will replace the default types. The object key will be the type used in the commit message together with the `emoji` entry.
 
 You can also specify a fixed set of **scope** entries for your project by adding the respective field in the `package.json` config section.
 
-Setting `quick` to a truthy value will skip the _long description_ and _closed issues_ section of the dialogue.
+Setting `quick` to a truthy value to only use the `types` and `short description` to define your commit message.
 
 ```json
 ..
@@ -80,9 +77,24 @@ Setting `quick` to a truthy value will skip the _long description_ and _closed i
 }
 ```
 
+### globally
+
+For global configuration just use the same syntax as for project level settings and put them in an **cz-conventional-kawaii** entry.
+
+To use quick mode by default set `$HOME/.czrc` to:
+
+```json
+{
+    "path": "cz-conventional-kawaii",
+    "cz-conventional-kawaii": {
+        "quick": true
+    }
+}
+```
+
 ### custom adapter
 
-You can build your own *kawaii* commitizen adapter using **cz-conventional-kawaii** as a dependency and pass it your custom config.
+To build your own *kawaii* commitizen adapter use **cz-conventional-kawaii** as a dependency and pass it your custom config.
 
 ```javascript
 // myadapter.js
@@ -94,7 +106,7 @@ module.exports = convKawaii.module(myConfig);
 ```
 ## Future ideas
 
-* [ ] Might implement global configuration options via `{home}/.czrc` at some point.
+* [x] Might implement global configuration options via `{home}/.czrc` at some point.
 
 ## License
 
