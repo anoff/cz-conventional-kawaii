@@ -1,5 +1,7 @@
 # cz-conventional-kawaii
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/anoff/cz-conventional-kawaii.svg)](https://greenkeeper.io/)
+
 > Allow emojified commit messages and clean changelogs 🐼📄
 
 You like emojis and think conventional changelog formatting is a good idea? Well **cz-conventional-kawaii** gives you both. It is basically a blend between `cz-conventional-changelog-atom`, `cz-conventional-changelog` and `cz-emoji`.
