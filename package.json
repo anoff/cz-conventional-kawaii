@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "read-pkg-up": "^4.0.0",
-    "wrap-ansi": "^3.0.0"
+    "wrap-ansi": "^4.0.0"
   },
   "devDependencies": {
     "standard": "^11.0.1"
