@@ -24,6 +24,6 @@
     "wrap-ansi": "^4.0.0"
   },
   "devDependencies": {
-    "standard": "^11.0.1"
+    "standard": "^12.0.0"
   }
 }
